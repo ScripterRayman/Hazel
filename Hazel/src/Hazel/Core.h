@@ -7,7 +7,7 @@
         #define HAZEL_API __declspec(dllimport)
     #endif
 #else
-    #ifdef BUILD_DLL
+    #ifdef HZ_BUILD_DLL
         #define HAZEL_API __attribute__((visibility("default")))
     #else
         #define HAZEL_API
